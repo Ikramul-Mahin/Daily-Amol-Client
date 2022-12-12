@@ -1,0 +1,7 @@
+.home-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/8082353/pexels-photo-8082353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
