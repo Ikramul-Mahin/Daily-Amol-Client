@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyAmolTable = ({ amol, i }) => {
+const MyAmolTable = ({ amol, i, handleDelete }) => {
     console.log(amol)
     // const [sums, setSum] = useState(0)
     const { salat, jikir, quran, boi, dowa, dawat, roja, kahf, tahajjut, mulk, date } = amol
@@ -20,8 +20,7 @@ const MyAmolTable = ({ amol, i }) => {
                             <td className='pl-16'>{gainedAmol}</td>
                             <td className='pl-16'>{missedAmol}</td>
                             <td className='pl-10'>{date}</td>
-                            <td> <button className='btn btn-xs bg-red-700'>Delete</button></td>
-                            {/* <td> <button onClick={() => { handleDelete(booking?._id) }} className='btn btn-sm bg-red-700'>Delete </button> </td> */}
+                            <td> <button className='btn btn-xs bg-red-700' onClick={() => { handleDelete(amol?._id) }}>Delete </button> </td>
                         </tr>
 
 

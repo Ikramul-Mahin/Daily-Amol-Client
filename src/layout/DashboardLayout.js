@@ -18,6 +18,8 @@ const DashboardLayout = () => {
                         < li className='border font-bold btn-outline btn-warning rounded' > <Link to="/dashboard/addamol">Add Amol</Link></li>
                         < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/myamol">My Amols</Link></li>
                         < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/individuals">ALL Indvidual Amals</Link></li>
+                        < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/adddawa">Add A Dawa</Link></li>
+                        < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/mydawa">My Dawa</Link></li>
                     </ul>
                 </div>
             </div>

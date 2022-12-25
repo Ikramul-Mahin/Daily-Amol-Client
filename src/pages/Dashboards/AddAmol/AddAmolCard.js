@@ -2,8 +2,8 @@ import React from 'react';
 
 const AddAmolCard = ({ individual, i }) => {
     return (
-        <div className='container'>
-            <div className="card my-4 w-60 image-full">
+        <div className=''>
+            <div className="card my-4 mx-2 image-full">
                 <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
                 <div className="card-body text-warning">
                     <div className='text-center'>

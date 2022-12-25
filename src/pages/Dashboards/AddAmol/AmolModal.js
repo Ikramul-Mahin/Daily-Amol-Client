@@ -1,10 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+import Loading from '../../../component/Loading/Loading';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 
 const AmolModal = ({ refetch }) => {
-    const { user } = useContext(AuthContext)
+    const { user, loading } = useContext(AuthContext)
+    const navigate = useNavigate()
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const handleAmal = (data) => {
         console.log(data)
@@ -20,12 +23,12 @@ const AmolModal = ({ refetch }) => {
             .then(data => {
                 console.log(data)
                 toast.success('আলহামদুলিল্লাহ আপনার আমল জমা হয়েছে')
+                navigate('/dashboard/myamol')
                 refetch()
             })
-
-
-
-
+    }
+    if (loading) {
+        <Loading></Loading>
     }
 
     return (

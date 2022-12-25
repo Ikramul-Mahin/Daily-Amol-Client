@@ -23,7 +23,7 @@ const AllIndividualAmol = () => {
     return (
         <div>
             <h2 className='text-warning text-center'>Total individual amol collection.</h2>
-            <div className='grid grid-cols-2'>
+            <div className='grid grid-cols-2 '>
                 {
                     indiviualAmols.map((individual, i) => <AddAmolCard
                         individual={individual}

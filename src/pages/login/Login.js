@@ -1,12 +1,20 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import toast from 'react-hot-toast';
-import { Navigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
 const Login = () => {
-    const { loginUser } = useContext(AuthContext)
+    //private route
+    let location = useLocation()
+    const navigate = useNavigate()
+    let from = location.state?.from?.pathname || "/dashboard/addamol"
+
+    //login effects
+    const { loginUser, user } = useContext(AuthContext)
     const { register, formState: { errors }, handleSubmit } = useForm()
     const [loginError, setLoginError] = useState('')
+
+    //sign in function
     const handleLogin = (data) => {
         console.log(data)
         setLoginError('')
@@ -14,13 +22,19 @@ const Login = () => {
             .then(result => {
                 const user = result.user
                 console.group(user)
+                navigate(from, { replace: true })
                 toast.success('successfully Loged In')
+                navigate("/dashboard/addamol")
             })
             .catch(error => {
                 console.log(error.message)
-                // setLoginError(error.message)
+                setLoginError(error.message)
             })
     }
+    if (user) {
+        navigate(from, { replace: true })
+    }
+
     return (
         <div className='h-[800px] flex justify-center items-center'>
             <div className='w-96 p-7'>
@@ -51,7 +65,7 @@ const Login = () => {
                     {/* <p>{data}</p> */}
                     <input className='btn w-full mt-4 bg-green-600' value='LogIn' type="submit" />
                     <div>
-                        {loginError && <p>{loginError}</p>}
+                        {loginError && <p className='text-red-700 text-lg'>{loginError}</p>}
                     </div>
                 </form>
 
