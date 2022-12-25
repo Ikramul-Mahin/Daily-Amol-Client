@@ -12,11 +12,12 @@ const DashboardLayout = () => {
 
                     <Outlet></Outlet>
                 </div>
-                <div className="drawer-side">
+                <div className="drawer-side home-bg">
                     <label htmlFor="my-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-80 bg-base-100 text-base-content">
-                        < li className='border rounded' > <Link to="/dashboard/addamol">Add Amol</Link></li>
-                        < li className='border rounded' > <Link to="/dashboard/myamol">My Amols</Link></li>
+                    <ul className="menu p-4 w-80 bg-green-700 text-base-content">
+                        < li className='border font-bold btn-outline btn-warning rounded' > <Link to="/dashboard/addamol">Add Amol</Link></li>
+                        < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/myamol">My Amols</Link></li>
+                        < li className='border btn-outline btn-warning font-bold rounded mt-3' > <Link to="/dashboard/individuals">ALL Indvidual Amals</Link></li>
                     </ul>
                 </div>
             </div>

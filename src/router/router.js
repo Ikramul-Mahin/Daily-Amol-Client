@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../layout/DashboardLayout";
 import Main from "../layout/Main";
 import AddAmol from "../pages/Dashboards/AddAmol/AddAmol";
+import AllIndividualAmol from "../pages/Dashboards/AllIndividualAmol/AllIndividualAmol";
 import MyAmol from "../pages/Dashboards/MyAmol/MyAmol";
 import Hadis from "../pages/Hadis/Hadis";
 import Homes from "../pages/Home/Homes/Homes";
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/myamol',
                 element: <MyAmol></MyAmol>
+            },
+            {
+                path: '/dashboard/individuals',
+                element: <AllIndividualAmol></AllIndividualAmol>
             }
         ]
     }

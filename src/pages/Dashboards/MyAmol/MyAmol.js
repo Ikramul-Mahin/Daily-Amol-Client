@@ -6,17 +6,12 @@ import MyAmolTable from './MyAmolTable';
 
 const MyAmol = () => {
     const { user } = useContext(AuthContext)
-    // const [amols, setAmols] = useState([])
-    // useEffect(() => {
-    //     fetch(`http://localhost:5000/amols?email=${user?.email}`)
-    //         .then(res => res.json())
-    //         .then(data => setAmols(data))
-    // }, [user?.email])
+
 
     const { data: amols = [], isLoading, refetch } = useQuery({
         queryKey: ['users', user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://daily-amol-server.vercel.app/amols?email=${user?.email}`, {
+            const res = await fetch(`http://localhost:5000/amolByEmail?email=${user?.email}`, {
 
             })
             const data = await res.json()
@@ -28,18 +23,17 @@ const MyAmol = () => {
     }
     return (
         <div>
-            <table className="table w-full">
+            <table className='table w-full'>
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>Total</th>
+                        {/* <th>Total</th> */}
                         <th>Gained</th>
                         <th>Missed</th>
                         <th>Date</th>
                         <th>Delete</th>
                     </tr>
                 </thead>
-
             </table>
 
             {
@@ -49,6 +43,21 @@ const MyAmol = () => {
                     key={amol._id}
                 ></MyAmolTable>)
             }
+            <hr />
+
+            <div>
+                <h2 className='text-warning'>Dear {user.displayName} You Have Gained:{amols.reduce((prev, next) => {
+                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
+                    return prev + gain
+                }, 0)}</h2>
+
+            </div>
+            {/* <div>
+                <h2>Total Gained:{amols.reduce((prev, next) => {
+                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
+                    return prev + gain
+                }, 0)}</h2>
+            </div> */}
         </div>
     );
 };

@@ -3,10 +3,39 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='home-bg text-center'>
-            <div className='felx justify-end text-cyan-50 md:text-end pt-40 sm:mr-8  lg:pr-20'>
-                <h2 className=' font-semibold text-5xl'>Amal is the power of Muslim. <br /> Grow Your Amal</h2>
-                <h4 className=' text-2xl font-normal mt-5'>Do your Amal Daily.</h4>
+        <div className=' text-center'>
+
+            <div className="carousel w-full h-screen">
+                <div id="slide1" className="carousel-item relative w-full">
+                    <img src="https://islamkidunya.com/wp-content/uploads/2020/02/24-1.jpg" className="w-full" />
+
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+
+                        <a href="#slide4" className="btn btn-circle">❮</a>
+                        <a href="#slide2" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" className="carousel-item relative w-full">
+                    <img src="https://islamkidunya.com/wp-content/uploads/2020/02/12-2.jpg" className="w-full" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" className="btn btn-circle">❮</a>
+                        <a href="#slide3" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" className="carousel-item relative w-full">
+                    <img src="https://islamkidunya.com/wp-content/uploads/2020/02/q-59-584x1024.jpg" className="w-full" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" className="btn btn-circle">❮</a>
+                        <a href="#slide4" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" className="carousel-item relative w-full">
+                    <img src="https://islamkidunya.com/wp-content/uploads/2020/02/65.jpg" className="w-full" />
+                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" className="btn btn-circle">❮</a>
+                        <a href="#slide1" className="btn btn-circle">❯</a>
+                    </div>
+                </div>
             </div>
         </div>
     );
