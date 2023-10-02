@@ -12,7 +12,7 @@ const MyAmol = () => {
     const { data: amols = [], isLoading, refetch } = useQuery({
         queryKey: ['users', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/amolByEmail?email=${user?.email}`, {
+            const res = await fetch(`https://daily-amol-server.vercel.app/amolByEmail?email=${user?.email}`, {
 
             })
             const data = await res.json()
@@ -22,7 +22,7 @@ const MyAmol = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure u want to confirm!')
         if (proceed) {
-            fetch(`http://localhost:5000/amols/${id}`, {
+            fetch(`https://daily-amol-server.vercel.app/amols/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -64,14 +64,14 @@ const MyAmol = () => {
             <hr />
 
             <div>
-                <h2 className='text-warning'>Dear {user.displayName} You Have Gained:{amols.reduce((prev, next) => {
-                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
+                <h2 className='text-warning py-6 text-lg'> Dear {user.displayName}  You Have Gained: <span className='text-white text-lg'>{amols.reduce((prev, next) => {
+                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.sofor) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
                     return prev + gain
-                }, 0)}</h2>
+                }, 0)}</span> Out Of 300.</h2>
 
             </div>
 
-        </div>
+        </div >
     );
 };
 

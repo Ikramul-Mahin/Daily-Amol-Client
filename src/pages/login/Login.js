@@ -64,6 +64,7 @@ const Login = () => {
 
                     {/* <p>{data}</p> */}
                     <input className='btn w-full mt-4 bg-green-600' value='LogIn' type="submit" />
+
                     <div>
                         {loginError && <p className='text-red-700 text-lg'>{loginError}</p>}
                     </div>

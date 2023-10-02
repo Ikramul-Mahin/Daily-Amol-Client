@@ -24,7 +24,7 @@ const Header = () => {
                 :
                 <>
                     <li className='text-warning text-xl font-bold'> <Link to='/login' >Login</Link>  </li>
-                    <li className='text-warning text-xl font-bold'> <Link to='/signup' >SignUp</Link>  </li>
+                    {/* <li className='text-warning text-xl font-bold'> <Link to='/signup' >SignUp</Link>  </li> */}
                 </>
         }
 

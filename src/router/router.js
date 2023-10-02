@@ -11,7 +11,8 @@ import Homes from "../pages/Home/Homes/Homes";
 import Login from "../pages/login/Login";
 import SignUp from "../pages/signup/SignUp";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
-
+import SellerRoute from "./SellerRoute/SellerRoute";
+import error from '../assect/1588528_221067-P1O4VU-734.jpg'
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -53,12 +54,18 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/adddawa',
-                element: <AddDawa></AddDawa>
+                element: <SellerRoute><AddDawa></AddDawa></SellerRoute>
             },
             {
                 path: '/dashboard/mydawa',
-                element: <MyDawa></MyDawa>
+                element: <SellerRoute><MyDawa></MyDawa></SellerRoute>
             }
         ]
+    },
+    {
+        path: '*',
+        element: <div>
+            <img className="h-screen w-full" src={error} alt="" />
+        </div>
     }
 ])

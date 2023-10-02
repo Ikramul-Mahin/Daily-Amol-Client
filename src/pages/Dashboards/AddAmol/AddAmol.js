@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import Loading from '../../../component/Loading/Loading';
 import { AuthContext } from '../../../context/AuthProvider/AuthProvider';
 import AmolModal from './AmolModal';
+import DawaCard from './DawaCard';
 
 const AddAmol = () => {
     const { user } = useContext(AuthContext)
@@ -12,7 +13,7 @@ const AddAmol = () => {
     const { data: allamols = [], isLoading, refetch } = useQuery({
         queryKey: ['users', user?.email],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/amols`, {
+            const res = await fetch(`https://daily-amol-server.vercel.app/amols`, {
 
             })
             const data = await res.json()
@@ -26,16 +27,16 @@ const AddAmol = () => {
 
     return (
         <div className='my-4 mb-4'>
+
+            <DawaCard></DawaCard>
+
             <div className="card glass pt-4 ">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="car!" /></figure>
+                {/* <figure><img src="https://placeimg.com/400/225/arch" alt="car!" /></figure> */}
                 <div className="card-body">
                     <h2 className="text-black">{user?.name}</h2>
-                    <p>Submit Your Amal!</p>
+                    <p className='text-warning font-bold text-lg' >Submit Your Amal!</p>
                     <div className="card-actions justify-start">
-                        {/* <button
-                            htmlFor="my-modal-3"
-                            className="btn bg-green-600 "
-                        >আমল জমা দিন</button> */}
+
                         <label
                             htmlFor="my-modal-3"
                             className="btn bg-green-600 "
@@ -51,9 +52,9 @@ const AddAmol = () => {
 
             <div>
                 <hr className='bg=warning my-4' />
-                <h2 className='text-xl text-white text-center my-2'>Latest 6 Amols Submission</h2>
+                <h2 className='text-xl text-white text-center my-2'>Latest 10 Amols Submission</h2>
                 {
-                    allamols.slice(0, 6).map((allamol, i) => <div className="overflow-x-auto">
+                    allamols.slice(0, 10).map((allamol, i) => <div className="overflow-x-auto">
                         <table className="table table-zebra w-full ">
 
                             <tbody className=''>

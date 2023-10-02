@@ -49,7 +49,7 @@ const AmolModal = ({ refetch }) => {
                         </div>
 
                         <div className="form-control w-full ">
-                            <label className="label">১. ৫ ওয়াক্ত সালাত এবং পরবর্তি আমল? </label>
+                            <label className="label">১. ৫ ওয়াক্ত সালাত এবং সালাত পরবর্তি আমল? </label>
                             <select className=' border p-4' {...register("salat")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
@@ -63,35 +63,42 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৩. ৪ পৃষ্ঠা কোরআন তিলাওয়াত?  </label>
+                            <label className="label">৩. ৩০টি আয়াত তিলাওয়াত র্অথসহ? </label>
                             <select className=' border p-4' {...register("quran")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৪. ১০ পৃষ্ঠা বই পড়া? </label>
+                            <label className="label">৪. নতুন ইলমের সফর ? </label>
+                            <select className=' border p-4' {...register("sofor")}>
+                                <option value="0">হয়নি</option>
+                                <option value="2">হয়েছে</option>
+                            </select>
+                        </div>
+                        <div className="form-control w-full">
+                            <label className="label">৫. ১০ পৃষ্ঠা বই পড়া এবং ১০০ বার সুবহানাল্লাহ ? </label>
                             <select className=' border p-4' {...register("boi")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
                             </select>
                         </div>
                         <div className="form-control w-full ">
-                            <label className="label">৫. ১৫-২০ মিনিট দাওয়াতের ফিকির করা? </label>
-                            <select className=' border p-4' {...register("dawat")}>
+                            <label className="label">৬. দৈনিক ৫-১০ মিনিট সৎ কাজের আদেশ ও অসৎ <br /> কাজের নিষেধের আমল করা হয়েছে?  </label>
+                            <select className='border p-4' {...register("dawat")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৬. প্রতিদিন ১০ মিনিট মোনাজাত ? </label>
+                            <label className="label">৭. প্রতিদিন ৫ মিনিট মোনাজাত এবং ১০০ বার ইস্তেগফার ? </label>
                             <select className=' border p-4' {...register("dowa")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৭. সুরা-মুলক এবং ঘুমানোর আমল? </label>
+                            <label className="label">৮. সুরা-মুলক এবং ঘুমানোর আমল? </label>
                             <select className=' border p-4' {...register("mulk")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
@@ -107,24 +114,24 @@ const AmolModal = ({ refetch }) => {
                             </div>
                             <div className="collapse-content  text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
                                 <div className="form-control w-full">
-                                    <label className="label">৮. সপ্তাহে মিনিমাাম ২ দিন তাহাজ্জুদ? </label>
+                                    <label className="label">৯. সপ্তাহে মিনিমাাম ১ দিন তাহাজ্জুদ? </label>
                                     <select className=' border p-4' {...register("tahajjut")}>
                                         <option value="0">হয়নি</option>
-                                        <option value="1">হয়েছে</option>
+                                        <option value="3">হয়েছে</option>
                                     </select>
                                 </div>
                                 <div className="form-control w-full">
-                                    <label className="label">৯. সপ্তাহে ১দিন রোজা? </label>
+                                    <label className="label">১০. সপ্তাহে ১দিন রোজা? </label>
                                     <select className=' border p-4' {...register("roja")}>
                                         <option value="0">হয়নি</option>
-                                        <option value="1">হয়েছে</option>
+                                        <option value="3">হয়েছে</option>
                                     </select>
                                 </div>
                                 <div className="form-control w-full ">
-                                    <label className="label">১০. শুক্রবারের আমল এবং সুরা কাহফ? </label>
+                                    <label className="label">১১. শুক্রবারের আমল এবং সুরা কাহফ? </label>
                                     <select className=' border p-4' {...register("kahf")}>
                                         <option value="0">হয়নি</option>
-                                        <option value="1">হয়েছে</option>
+                                        <option value="2">হয়েছে</option>
                                     </select>
                                 </div>
 
@@ -133,12 +140,12 @@ const AmolModal = ({ refetch }) => {
 
 
 
-                        <input className='btn w-full mt-2 bg-green-700' type="submit" />
+                        <div className='text-center mt-2'>
+                            <label className='text-red-700 ' htmlFor=""> সাবমিট বাটনে একবার ক্লিক করুন।</label>
+                            <input className='btn w-full mt-2 bg-green-700' type="submit" />
+                        </div>
                         <div className="modal-action w-full">
-                            <label
-                                htmlFor="my-modal-3"
-                                className="btn w-full bg-red-700"
-                            >Close </label>
+                            <label htmlFor="my-modal-3" className="btn w-full bg-red-700">Close </label>
                         </div>
                     </form>
                 </div>

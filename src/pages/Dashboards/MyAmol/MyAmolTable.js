@@ -3,9 +3,9 @@ import React from 'react';
 const MyAmolTable = ({ amol, i, handleDelete }) => {
     console.log(amol)
     // const [sums, setSum] = useState(0)
-    const { salat, jikir, quran, boi, dowa, dawat, roja, kahf, tahajjut, mulk, date } = amol
-    const gainedAmol = Number(salat) + Number(jikir) + Number(quran) + Number(boi) + Number(dowa) + Number(dawat) + Number(mulk) + Number(roja) + Number(kahf) + Number(tahajjut)
-    const missedAmol = 7 - gainedAmol
+    const { salat, jikir, quran, boi, dowa, dawat, roja, kahf, tahajjut, mulk, date, sofor } = amol
+    const gainedAmol = Number(salat) + Number(jikir) + Number(quran) + Number(sofor) + Number(boi) + Number(dowa) + Number(dawat) + Number(mulk) + Number(roja) + Number(kahf) + Number(tahajjut)
+    const missedAmol = 9 - gainedAmol
 
 
     return (

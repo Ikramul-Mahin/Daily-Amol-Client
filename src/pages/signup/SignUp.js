@@ -25,7 +25,7 @@ const SignUp = () => {
                 }
                 userUpdate(userInfo)
                     .then(() => {
-                        saveUser(data.name, data.email);
+                        saveUser(data.email, data.name);
                     })
                     .catch(err => console.log(err));
             })
@@ -36,7 +36,7 @@ const SignUp = () => {
     }
     const saveUser = (email, name) => {
         const user = { email, name };
-        fetch('http://localhost:5000/users', {
+        fetch('https://daily-amol-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
