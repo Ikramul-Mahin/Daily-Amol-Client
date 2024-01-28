@@ -104,10 +104,12 @@ const AmolModal = ({ refetch }) => {
                                 <option value="1">হয়েছে</option>
                             </select>
                         </div>
-                        <div className="flex flex-col w-full border-opacity-50">
+
+                        //for advance
+                        {/* <div className="flex flex-col w-full border-opacity-50">
                             <div className="divider">Click Below If Weekly</div>
-                        </div>
-                        <div className="collapse border-2">
+                        </div> */}
+                        {/* <div className="collapse border-2">
                             <input type="checkbox" className="peer" />
                             <div className="collapse-title   peer-checked:bg-secondary peer-checked:text-secondary-content">
                                 সাপ্তাহিক
@@ -136,7 +138,7 @@ const AmolModal = ({ refetch }) => {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}
 
 
 

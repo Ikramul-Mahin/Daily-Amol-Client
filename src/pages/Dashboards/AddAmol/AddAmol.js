@@ -34,14 +34,14 @@ const AddAmol = () => {
                 {/* <figure><img src="https://placeimg.com/400/225/arch" alt="car!" /></figure> */}
                 <div className="card-body">
                     <h2 className="text-black">{user?.name}</h2>
-                    <div className='text-amber-400'>
+                    {/* <div className='text-amber-400'>
                         <h1 className='text-xl'>Octobor Toppers</h1>
                         <ul >
                             <li>1st: Jaber</li>
                             <li>2nd: Hamza</li>
                             <li>3rd: Muyaj</li>
                         </ul>
-                    </div>
+                    </div> */}
                     <p className='text-warning font-bold text-lg' >Submit Your Amal!</p>
                     <div className="card-actions justify-start">
 

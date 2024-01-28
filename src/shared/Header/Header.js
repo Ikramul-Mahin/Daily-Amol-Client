@@ -13,7 +13,7 @@ const Header = () => {
             .catch(err => console.log(err))
     }
     const menuItems = <React.Fragment>
-        <li className='text-warning text-xl font-bold' > <Link to='/'>Home's</Link>  </li>
+        <li className='text-warning text-xl font-bold' > <Link to='/'>Home</Link>  </li>
         <li className='text-warning text-xl font-bold'> <Link to='/hadis'>Hadis</Link>  </li>
         {
             user?.uid ?
