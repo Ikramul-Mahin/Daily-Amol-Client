@@ -12,7 +12,7 @@ const AddAmolCard = ({ individual, i }) => {
                         <h2 className='text-lg text-warning'>Total Gained: <span className='text-white'> {
                             individual?.reduce((prev, next) => {
                                 console.log(individual);
-                                let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.sofor) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
+                                let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.sofor) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) 
                                 return prev + gain
                             }, 0)}</span> out of 300
                         </h2>

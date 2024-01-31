@@ -38,6 +38,7 @@ const MyAmol = () => {
     if (isLoading) {
         return <Loading></Loading>
     }
+  
     return (
         <div>
             <table className='table w-full'>
@@ -65,10 +66,10 @@ const MyAmol = () => {
 
             <div>
                 <h2 className='text-warning py-6 text-lg'> Dear {user.displayName}  You Have Gained: <span className='text-white text-lg'>{amols.reduce((prev, next) => {
-                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.sofor) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) + Number(next.roja) + Number(next.kahf) + Number(next.tahajjut)
+                    let gain = Number(next.salat) + Number(next.jikir) + Number(next.quran) + Number(next.sofor) + Number(next.boi) + Number(next.dowa) + Number(next.dawat) + Number(next.mulk) 
                     return prev + gain
                 }, 0)}</span> Out Of 300.</h2>
-
+  
             </div>
 
         </div >

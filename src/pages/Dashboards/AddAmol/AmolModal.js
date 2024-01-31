@@ -63,10 +63,10 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৩. ৩০টি আয়াত তিলাওয়াত র্অথসহ? </label>
+                            <label className="label">৩. ২০টি আয়াত তিলাওয়াত র্অথসহ? </label>
                             <select className=' border p-4' {...register("quran")}>
                                 <option value="0">হয়নি</option>
-                                <option value="1">হয়েছে</option>
+                                <option value="2">হয়েছে</option>
                             </select>
                         </div>
                         <div className="form-control w-full">
@@ -77,7 +77,7 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৫. ১০ পৃষ্ঠা বই পড়া এবং ১০০ বার সুবহানাল্লাহ ? </label>
+                            <label className="label">৫. ১০ পৃষ্ঠা বই পড়া ? </label>
                             <select className=' border p-4' {...register("boi")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
@@ -91,7 +91,7 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৭. প্রতিদিন ৫ মিনিট মোনাজাত এবং ১০০ বার ইস্তেগফার ? </label>
+                            <label className="label">৭. প্রতিদিন ৫ মিনিট মোনাজাত ? </label>
                             <select className=' border p-4' {...register("dowa")}>
                                 <option value="0">হয়নি</option>
                                 <option value="1">হয়েছে</option>
@@ -105,7 +105,7 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
 
-                        //for advance
+                        {/* weekly amol code */}
                         {/* <div className="flex flex-col w-full border-opacity-50">
                             <div className="divider">Click Below If Weekly</div>
                         </div> */}
