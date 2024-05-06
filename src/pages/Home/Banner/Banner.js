@@ -5,6 +5,7 @@ const Banner = () => {
     return (
         <div className=' text-center'>
 
+
             <div className="carousel w-full h-screen">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://islamkidunya.com/wp-content/uploads/2020/02/24-1.jpg" className="w-full" />

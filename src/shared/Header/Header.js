@@ -15,6 +15,8 @@ const Header = () => {
     const menuItems = <React.Fragment>
         <li className='text-warning text-xl font-bold' > <Link to='/'>Home</Link>  </li>
         <li className='text-warning text-xl font-bold'> <Link to='/hadis'>Hadis</Link>  </li>
+        <li className='text-warning text-xl font-bold'> <Link to='/login' >Login</Link>  </li>
+
         {
             user?.uid ?
                 <>
