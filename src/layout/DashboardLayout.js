@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { AuthContext } from '../context/AuthProvider/AuthProvider';
-import useGuider from '../Hook/useSeller';
 import Header from '../shared/Header/Header';
+import useSeller from '../Hook/useSeller';
 
 const DashboardLayout = () => {
     const { user } = useContext(AuthContext)
-    const [isSeller] = useGuider(user?.email)
+    const [isSeller] = useSeller(user?.email)
     console.log(isSeller);
     return (
         <div>
