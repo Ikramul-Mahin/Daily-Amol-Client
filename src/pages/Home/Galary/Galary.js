@@ -5,21 +5,21 @@ export function MasonryGridGallery() {
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+				 src="https://mrwallpaper.com/images/hd/cave-view-of-palestine-flag-plip9su0owtsyxn2.jpg"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center "
-				 src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraqYsIpDe26x0v8vg8Wl6coKaJSkVBX9y41iKi6DIgA&s"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCX7Ntg1vsPiNe0tBP-DM7kT_kKqh9qbHhkii3wjWjA&s"
 				 alt="gallery-photo"
 			  />
 			</div>
@@ -28,21 +28,21 @@ export function MasonryGridGallery() {
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+				 src="https://www.synergiafoundation.org/sites/default/files/1_37.jpg"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbK6SOKyonkN8D9lNc9qM2lES8l96lTaxZOEvtXlTQRg&s"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center "
-				 src="https://docs.material-tailwind.com/img/team-3.jpg"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9NHildtaUj4Tt5Y4YFZFg4Vepm6URMbB04wOyrmLWg&s"
 				 alt="gallery-photo"
 			  />
 			</div>
@@ -51,21 +51,21 @@ export function MasonryGridGallery() {
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtVvYVU2sR5FfuaSBuwhZIEMeJMwL_zNR9XQ&s"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center "
-				 src="https://docs.material-tailwind.com/img/team-3.jpg"
+				 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMvCp6UnCiXtEg4CZUXsDq1cj2crZI69k-QSyfbgQhlQ&s"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+				 src="https://www.zawaj.com/askbilqis/wp-content/uploads/2010/03/boy-and-father-saying-dua.jpg"
 				 alt="gallery-photo"
 			  />
 			</div>
@@ -74,14 +74,14 @@ export function MasonryGridGallery() {
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+				 src="https://cdn.britannica.com/91/74191-004-B0D40245/fighters-bombing-cave-sanctuaries-terrorist-organization-al-Qaeda-December-16-2001.jpg"
 				 alt="gallery-photo"
 			  />
 			</div>
 			<div>
 			  <img
 				 className="h-auto max-w-full rounded-lg object-cover object-center"
-				 src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80"
+				 src="https://i.guim.co.uk/img/media/029b4a07262f20c5d4257a71a70e839c869fd709/207_191_4003_2403/master/4003.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f8a632dcf08016fd2db159fba28d2220"
 				 alt="gallery-photo"
 			  />
 			</div>

@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
                 element: <Login></Login>
             },
             {
-                path: 'hadis',
+                path: '/hadis',
                 element: <Hadis></Hadis>
             },
             {
