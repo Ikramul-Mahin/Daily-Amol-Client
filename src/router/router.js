@@ -13,6 +13,7 @@ import SignUp from "../pages/signup/SignUp";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import SellerRoute from "./SellerRoute/SellerRoute";
 import error from '../assect/1588528_221067-P1O4VU-734.jpg'
+import Books from "../pages/Books/Books";
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
             {
                 path: '/hadis',
                 element: <Hadis></Hadis>
+            },
+            {
+                path:'/books',
+                element:<Books></Books>
             },
             {
                 path: '/signup',
