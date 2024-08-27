@@ -14,7 +14,7 @@ const Header = () => {
     }
     const menuItems = <React.Fragment>
         <li className=' text-xl ' > <Link to='/'>Home</Link>  </li>
-        <li className=' text-xl '> <Link to='/hadis'>Hadis</Link>  </li>
+        {/* <li className=' text-xl '> <Link to='/hadis'>Hadis</Link>  </li> */}
         <li className=' text-xl '> <Link to='/books'>Books Corner</Link>  </li>
         {/* <li className='text-warning text-xl font-bold'> <Link to='/login' >Login</Link>  </li> */}
 

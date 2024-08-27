@@ -63,7 +63,7 @@ const Login = () => {
                     </div>
 
                     {/* <p>{data}</p> */}
-                    <input className='btn w-full mt-4 bg-green-600' value='LogIn' type="submit" />
+                    <input className=' btn btn- bg-blue-800 mt-2 w-full' value='LogIn' type="submit" />
 
                     <div>
                         {loginError && <p className='text-red-700 text-lg'>{loginError}</p>}
