@@ -26,7 +26,7 @@ const AddAmol = () => {
     }
 
     return (
-        <div className='my-4 mb-4'>
+        <div className='my-4 mb-4 bg-blue-800'>
 
             <DawaCard></DawaCard>
 
@@ -42,12 +42,12 @@ const AddAmol = () => {
                             <li>3rd: Muyaj</li>
                         </ul>
                     </div> */}
-                    <p className='text-warning font-bold text-lg' >Submit Your Amal!</p>
+                    <p className='text-white font-bold text-lg' >Click The Button to Submit Your #Amol</p>
                     <div className="card-actions justify-start">
 
                         <label
                             htmlFor="my-modal-3"
-                            className="btn bg-green-600 "
+                            className="btn rounded bg-white text-amber-800 font-bold "
                         >আমল জমা দিন</label>
 
                     </div>
@@ -70,7 +70,7 @@ const AddAmol = () => {
                                     <th>{i + 1}</th>
                                     <td className=''>{allamol.email}</td>
                                     <td>{allamol.date}</td>
-                                    <td className=' bg-green-600'></td>
+                                    <td className=' bg-amber-800'></td>
                                 </tr>
                                 <hr className='my-1 text-center w-full' />
                             </tbody>

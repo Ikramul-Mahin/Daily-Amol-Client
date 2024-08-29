@@ -13,10 +13,10 @@ const MyAmolTable = ({ amol, i, handleDelete }) => {
     return (
         <div>
             <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
+                <table className="table table-zebra w-full mt-1">
 
                     <tbody className='table-zebra'>
-                        <tr className='font-semibold hover table-zebra'>
+                        <tr className='font-semibold  hover table-zebra'>
                             <td>{i + 1}</td>
                             {/* <td>7</td> */}
                             <td className='pl-16'>{gainedAmol}</td>

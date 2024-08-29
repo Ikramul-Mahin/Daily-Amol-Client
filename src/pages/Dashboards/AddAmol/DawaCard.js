@@ -19,10 +19,10 @@ const DawaCard = () => {
     return (
         <div className='mb-4'>
             {
-                dawas.map(dawa => <div className="card lg:card-side bg-neutral my-6 text-neutral-content rounded-md border-2 border-amber-500 shadow-xl">
+                dawas.map(dawa => <div className="card lg:card-side bg-blue-500 my-6 text-white rounded-md border-2 border-amber-500 shadow-xl">
                     <div className="card-body">
                         <div className='text-center w-40' >
-                            <h2 className='text-warning text-lg text-center border border-yellow-600 rounded'> <span className='text-white p-2' >Date:</span> {dawa.date}</h2>
+                            <h2 className='text-warning text-lg text-center border border-white rounded'> <span className='text-white p-2' >Date:</span> {dawa.date}</h2>
                         </div>
                         <div>
                             <label className="underline" htmlFor="">Guides</label>
