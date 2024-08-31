@@ -12,8 +12,15 @@ const Cover = () => {
     </div>
 
     {/* videos */}
-    <div class="lg:max-w-lg lg:w-full md:w-1/2 sm:w-fit ">
-    <iframe width="500" height="315" src="https://www.youtube.com/embed/3BP17mXNfHw?si=pDQckRAC14V4g-gI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
+    <div className="iframe-container">
+      <iframe
+        src="https://www.youtube.com/embed/3BP17mXNfHw?si=pDQckRAC14V4g-gI"
+        title="Responsive Video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
   </div>
 </section>
