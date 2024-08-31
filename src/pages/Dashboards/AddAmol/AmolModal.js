@@ -63,7 +63,7 @@ const AmolModal = ({ refetch }) => {
                             </select>
                         </div>
                         <div className="form-control w-full">
-                            <label className="label">৩. ২০টি আয়াত তিলাওয়াত র্অথসহ? </label>
+                            <label className="label">৩. ১০টি আয়াত তিলাওয়াত র্অথসহ? </label>
                             <select className=' border p-4' {...register("quran")}>
                                 <option value="0">হয়নি</option>
                                 <option value="2">হয়েছে</option>
@@ -144,10 +144,10 @@ const AmolModal = ({ refetch }) => {
 
                         <div className='text-center mt-2'>
                             <label className='text-red-700 ' htmlFor=""> সাবমিট বাটনে একবার ক্লিক করুন।</label>
-                            <input className='btn w-full mt-2 bg-green-700' type="submit" />
+                            <input className='btn w-full mt-2 bg-blue-800 rounded' type="submit" />
                         </div>
                         <div className="modal-action w-full">
-                            <label htmlFor="my-modal-3" className="btn w-full bg-red-700">Close </label>
+                            <label htmlFor="my-modal-3" className="btn w-full rounded bg-red-700">Close </label>
                         </div>
                     </form>
                 </div>
